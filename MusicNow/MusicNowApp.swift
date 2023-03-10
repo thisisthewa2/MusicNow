@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import Firebase
+
+
 
 @main
 struct MusicNowApp: App {
+    let data = MusicData()
+    //@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    init(){
+        FirebaseApp.configure()
+        data.loadAlbum()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MusicNow(data: data)
         }
     }
 }

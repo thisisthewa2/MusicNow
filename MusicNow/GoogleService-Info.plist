@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>638080938332-hv702rcl2gg2tmml4vt02lrtcgrmd6mt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.638080938332-hv702rcl2gg2tmml4vt02lrtcgrmd6mt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8lg_sEG3V1WFfT6Ga6Dlxd9QuO7E2na0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>638080938332</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mando.MusicNow</string>
+	<key>PROJECT_ID</key>
+	<string>musicnow-326fb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>musicnow-326fb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:638080938332:ios:634bcd5f2cea587a045199</string>
+</dict>
+</plist>
