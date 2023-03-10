@@ -32,7 +32,7 @@ class MusicData: ObservableObject{
                     self.albums.append(Album(name:name, image: image,songs: songsArray))
                 }
             }else{
-                print(error)
+                //print(error)
             }
         }
     }
