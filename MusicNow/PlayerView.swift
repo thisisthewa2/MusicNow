@@ -11,8 +11,8 @@ import Firebase
 import AVFoundation
 
 struct PlayerView: View {
-    var album: Album
-    var song: Song
+    @State var  album: Album
+    @State var song: Song
     
     @State var player = AVPlayer()
     @State var isPlaying : Bool = false //재생여부
@@ -45,17 +45,29 @@ struct PlayerView: View {
             }
         }.foregroundColor(Color("BlueGray"))
             .onAppear(){
-                let storage = Storage.storage().reference(forURL: self.song.file)
-                storage.downloadURL{(url, error) in
-                    if error != nil{
-                        print(error)
-                    }else{
-                        player = AVPlayer(url: url!)
-                        player.play()
-                    }
+                self.playSong()
+            }
+    }
+    
+    //음악 재생
+    func playSong()
+    {
+            let storage = Storage.storage().reference(forURL: self.song.file)
+            storage.downloadURL{(url, error) in
+                if error != nil{
+                    print(error)
+                }else{
+                    do{
+                        try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+                    }catch{}
+                    player = AVPlayer(url: url!)
+                    player.play()
                 }
             }
     }
+    
+    
+    //멈춤
     func playPause(){
         self.isPlaying.toggle()
         if isPlaying == true{
@@ -64,12 +76,28 @@ struct PlayerView: View {
             player.play()
         }
     }
-    
+    //다음 곡 재생
     func next(){
-        
+        if let currentIndex = album.songs.firstIndex(of: song){
+            if currentIndex == album.songs.count-1{
+                
+            }else{
+                player.pause()
+                song = album.songs[currentIndex+1]
+                self.playSong()
+            }
+        }
     }
-    
+    //이전 곡 재생
     func previous(){
-        
+        if let currentIndex = album.songs.firstIndex(of: song){
+            if currentIndex == 0{
+                
+            }else{
+                player.pause()
+                song = album.songs[currentIndex-1]
+                self.playSong()
+            }
+        }
     }
 }

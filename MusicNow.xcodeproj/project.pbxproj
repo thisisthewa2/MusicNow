@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2290DEF45D5131D59307FE7D /* Pods_MusicNow_MusicNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60DDA14BACF5F7B06EE83D2 /* Pods_MusicNow_MusicNowUITests.framework */; };
 		4B592BF029BB2C99002E5892 /* MusicNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592BEF29BB2C99002E5892 /* MusicNowApp.swift */; };
-		4B592BF229BB2C99002E5892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592BF129BB2C99002E5892 /* ContentView.swift */; };
 		4B592BF429BB2C9C002E5892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B592BF329BB2C9C002E5892 /* Assets.xcassets */; };
 		4B592BF729BB2C9C002E5892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B592BF629BB2C9C002E5892 /* Preview Assets.xcassets */; };
 		4B592C0129BB2C9C002E5892 /* MusicNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B592C0029BB2C9C002E5892 /* MusicNowTests.swift */; };
@@ -46,7 +45,6 @@
 		2F9FE442A9C1F8F021F7532B /* Pods-MusicNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicNow.debug.xcconfig"; path = "Target Support Files/Pods-MusicNow/Pods-MusicNow.debug.xcconfig"; sourceTree = "<group>"; };
 		4B592BEC29BB2C99002E5892 /* MusicNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B592BEF29BB2C99002E5892 /* MusicNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicNowApp.swift; sourceTree = "<group>"; };
-		4B592BF129BB2C99002E5892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B592BF329BB2C9C002E5892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B592BF629BB2C9C002E5892 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B592BFC29BB2C9C002E5892 /* MusicNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +127,6 @@
 				4B592C1929BB2CBB002E5892 /* MusicNow.swift */,
 				4B592C1B29BB2CC3002E5892 /* PlayerView.swift */,
 				4B592BEF29BB2C99002E5892 /* MusicNowApp.swift */,
-				4B592BF129BB2C99002E5892 /* ContentView.swift */,
 				4B592BF329BB2C9C002E5892 /* Assets.xcassets */,
 				4B592BF529BB2C9C002E5892 /* Preview Content */,
 			);
@@ -424,7 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B592C1A29BB2CBB002E5892 /* MusicNow.swift in Sources */,
-				4B592BF229BB2C99002E5892 /* ContentView.swift in Sources */,
 				4B592BF029BB2C99002E5892 /* MusicNowApp.swift in Sources */,
 				4BC799E729BB3563001126A0 /* MusicData.swift in Sources */,
 				4B592C1C29BB2CC3002E5892 /* PlayerView.swift in Sources */,
