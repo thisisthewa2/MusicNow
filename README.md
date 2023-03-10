@@ -1,5 +1,6 @@
 # MusicNow
-Music Streaming app in Swift UI with Firebase
+Music Streaming app in Swift UI with Firebase (Cocoapods)
+- run app by MusicNow.xcworkspace 
 - reference UI : [Soft UI Design - Neumorphism (Community)](https://www.figma.com/community/file/1069320791444977100)
 - Execution Screen
 
