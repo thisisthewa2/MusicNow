@@ -18,8 +18,11 @@ struct PlayerView: View {
     @State var isPlaying : Bool = false //재생여부
     var body: some View{
         ZStack{
-            Image(album.image).resizable().edgesIgnoringSafeArea(.all)
-            Blur(style: .dark).edgesIgnoringSafeArea(.all)
+//            Image(album.image).resizable().edgesIgnoringSafeArea(.all)
+//            Blur(style: .dark).edgesIgnoringSafeArea(.all)
+            AngularGradient(colors: [Color("AngularFirst"),Color("AngularSecond"),Color("AngularThird"),Color("AngularFourth"),Color("AngularFifth"),Color("AngularSixth")], center: .topLeading)
+                .ignoresSafeArea(.all)
+            
             VStack{
                 Spacer()
                 AlbumArt(album: album,isWithText: false)
@@ -30,15 +33,15 @@ struct PlayerView: View {
                     HStack{
                         Button(action: self.previous, label: {
                             Image("RewindButton").resizable()
-                        }).frame(width: 50,height: 50,alignment: .center)
+                        }).frame(width: 68,height: 68,alignment: .center)
                         
                         Button(action: self.playPause, label: {
                             Image(isPlaying ? "StartButton" : "StopButton").resizable()
-                        }).frame(width: 50,height: 50,alignment: .center)
+                        }).frame(width: 68,height: 68,alignment: .center)
                         
                         Button(action: self.next, label: {
                             Image("SkipButton").resizable()
-                        }).frame(width: 50,height: 50,alignment: .center)
+                        }).frame(width: 68,height: 68,alignment: .center)
                     }
                 }.edgesIgnoringSafeArea(.bottom).frame(height:200,alignment: .center)
                 
